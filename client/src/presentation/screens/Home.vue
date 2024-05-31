@@ -223,7 +223,7 @@ onBeforeUnmount(() => {
     <Placeholder
       ref="landing"
       class="landing"
-      title="Telebook"
+      title="TON Hotels"
       caption="As simple as messaging"
       :class="{
         'landing--loading': isLoading,
