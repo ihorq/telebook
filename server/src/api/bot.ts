@@ -33,7 +33,7 @@ export default class Bot {
     try {
       const whInfo = await this.bot.getWebHookInfo()
 
-      if ('url' in whInfo && whInfo.url !== '') {
+      if ('url' in whInfo && whInfo.url !== '' && whInfo.url == `${this.config.publicHost}/bot`) {
         console.log('🤖 WebHook info: ', whInfo);
       } else {
         await this.setWebhook();
